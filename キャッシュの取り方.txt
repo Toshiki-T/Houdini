@@ -1,0 +1,21 @@
+キャッシュをとるとき、File Cachノードにつけた名前で保存されるように設定する方法
+
+File Cach ノード > Geometry File
+
+
+(例)
+C:/Users/TOSHIK~1/Desktop/Fluid Implicit Particles/Liquid_sim/$OS/$OS.v`chs("../../controller/vers")`.$F.bgeo.sc
+
+
+
+①chooserから保存したいフォルダを選ぶ
+②デフォルトだと、Geometry Fileにそれぞれ保存したい名前を直接入力する必要があるので、保存先フォルダ以下の部分を書き換える
+
+Liquid_simという名前のフォルダに保存したい場合、Liquid_sim以下を下のように書き換える
+
+→　$OS/$OS.v`XX`.$F.bgeo.sc
+
+③`XX`の部分はあらかじめOBJ階層で作成したコントローラーのVersionパラメーターをコピーしたのものをペースとして入力する
+(多分、キャッシュを使ってシミュレーションを行うとき、バージョンで切り替えができるようにするためだと思う)
+
+④$OSの部分に、ノードの名前が適用される
